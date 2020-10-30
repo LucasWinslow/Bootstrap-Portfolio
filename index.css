@@ -1,0 +1,42 @@
+
+
+.container {
+    width:60%;
+    padding-top:20px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-left:40px;
+    margin-right:auto;
+    margin-top:60px;
+    margin-bottom:80px;
+}
+
+
+
+
+
+
+#pagetitle {
+    background-color: turquoise;
+    color: white;
+}
+
+h1 { 
+color: teal;
+}
+
+h2{
+    background-color: darkgray;
+}
+
+.bg {
+    background-image: url(https://assets.awwwards.com/awards/images/2015/04/pattern.jpg);
+}
+
+.footer {
+    background-color: teal;
+}
+
+body{
+    background-color: rgb(180, 179, 175) ;
+}
