@@ -53,3 +53,13 @@ Container was given margins, padding and width.
 The pagetitle was given a backgrond color.
 The h1 was gien a color.
 The body  was given a background color.
+
+
+
+
+
+I made edits at 02:41, I know it was after the assignment was due but I could not sleep knowing that my footer was not finished. I am so sorry that it was pushed back. I understand if this will dock my grade down.
+
+The edits done on each page and on the index.css are the following.
+
+I made an id tag of "footer" and linked it to css. In css I made editions like position fixed and bottom 0, that way it wont move off the bottom.
