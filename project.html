@@ -1,0 +1,605 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1>
+                <!--Was added to define an element. -->
+                <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a>
+                <!-- was given id of pagetitle, and <strong> and linked to index.html-->
+            </h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                        <!--was linked to contact.html-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <!--was linked to portfolio.html-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a> <!-- was linked to index.html-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pass.html">PassWord Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html">Weather!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Idk</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="row">
+    
+            <div class="container">
+    
+                <div class="card">
+                    <div class="card-body">
+                        <div class="jumbotron">
+                            <h1 class="display-4">The Fuel Finder</h1>
+                            <p class="lead"> Here you are being presented with a group project I was very lucky to work on. It is a Alternatitve Fuel Finder Web App. With an evolving world, it is good to keep up to date with Local Gas Stations and local EV stations. Use this dynamic tool to find one cloes to you!.
+                            </p>
+                            <hr class="my-4">
+                            <p>Working Web App</p>
+                            <a class="btn btn-dark btn-md" href="https://grantf12.github.io/Alternative_Fuel_Finder/"
+                                role="button">Fuel Finder</a>
+                                <p>Here is a link to the Repository.</p>
+                                <a class="btn btn-dark btn-md" href="https://github.com/grantf12/Alternative_Fuel_Finder"
+                                    role="button">Repository</a>
+                        </div>
+                    </div>
+                    <img src="images/FuelAPISS.png" class="thumbnail" width="auto" height="auto" style="margin:16px" float="right">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4">The HTML</h1>
+                        <p>
+                            <=$!DOCTYPE html>
+<=$html>
+
+<=$head>
+    <=$meta charset="utf-8">
+    <=$meta name="viewport" content="width=device-width, initial-scale=1">
+    <=$title>Fuel Finder<=$/title>
+    <=$link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <=$link rel="stylesheet" href="CssFile/style.css">
+    <=$script src="https://kit.fontawesome.com/14c899f3d3.js" crossorigin="anonymous"><=$/script>
+    <=$script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"><=$/script>
+    <=$script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"><=$/script>
+
+
+<=$/head>
+
+<=$body>
+    <!-- Title -->
+    <=$nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <=$div class="navbar-brand">
+            <=$a class="navbar-item title m-3" href="index2.html"> <=$span class="icon is-medium m-2">
+                    <=$i class="fas fa-gas-pump"><=$/i>
+                <=$/span><=$span> Alternative Fuel Finder<=$/a><=$/span>
+    <=$/nav>
+    <!-- Header -->
+    <=$div class="container mt-4">
+
+        <=$h1 class="title has-text-centered">
+            Find alternative fueling stations near you!
+        <=$/h1>
+        =$p class="subtitle has-text-centered">
+           Need an electric charging station? Or the closest biofuel fueling station?
+        <=$/p>
+    <=$/div>
+    <!-- Gas or Electric -->
+
+    <=$div class="container mt-5 has-text-centered">
+        <=$div class="row has-text-centered">
+            <=$div class="select is-rounded is-dark is-large" id="select-vehicle-type">
+                <=$select>
+                    <=$option>Select type of vehicle<=$/option>
+                    <=$option value="gas">Gas<=$/option>
+                    <=$option value="electric">Electric<=$/option>
+                <=$/select>
+            <=$/div>
+        <=$/div>
+        <!-- Radius Select -->
+
+        <=$div class="row mt-5 has-text-centered" id="radius-container">
+            <=$div class="select is-rounded is-dark is-large" id="select-radius">
+                <=$select>
+                    <=$option>Select search radius<=$/option>
+                    <=$option value="1">1 mile<=$/option>
+                    <=$option value="3">3 miles<=$/option>
+                    <=$option value="5">5 miles<=$/option>
+                    <=4option value="10">10 miles<=$/option>
+                <=$/select>
+            <=$/div>
+        <=$/div>
+    <=$/div>
+    <!-- Gas Container -->
+    <=$div class="container mt-5 has-text-centered is-hidden" id="gas-container">
+        <!-- Gas Fuel Type Select -->
+        <=$div class="select is-rounded is-dark is-large" id="select-fuel-type">
+            <=$select>
+                <=$option value="BD,CNG,E85,HY,LNG,LPG">Select fuel type<=$/option>
+                <=$option value="BD,CNG,E85,HY,LNG,LPG">All<=4/option>
+                <=$option value="BD">Biodiesel<=$/option>
+                <=$option value="CNG">Compressed Natural Gas<=$/option>
+                <=$option value="E85">Ethanol<=$/option>
+                <=$option value="HY">Hydrogen<=$/option>
+                <=$option value="LNG">Liquified Natural Gas<=$/option>
+                <=$option value="LPG">Propane<=$/option>
+            <=$/select>
+        <=$/div>
+    <=$/div>
+    <!-- EV connector and charge lvl-->
+    <=$div class="container mt-5 has-text-centered is-hidden" id="evConnector-container">
+        <=$div class="select is-rounded is-dark is-large" id="select-connector-type">
+            <=$select>
+                <=$option value="all">Select Connector Type<=$/option>
+                <=$option value="all">All<=$/option>
+                <=$option value="J1772">J1772<=$/option>
+                <=$option value="CCS">CCS<=$/option>
+                <=$option value="CHADEMO">CHAdeMO<=$/option>
+                <=$option value="TESLA">Tesla<=$/option>
+            <=$/select>
+        <=$/div>
+    <=$/div>
+    <=$div class="container mt-5 has-text-centered is-hidden" id="ev-level-container">
+        <=$div class="select is-rounded is-dark is-large" id="select-charger-level">
+            <=$select>
+                <=$option value="all">Select Charging Level<=$/option>
+                <=$option value="all">All<=$/option>
+                <=$option value="1">Level 1<=$/option>
+                <=$option value="2">Level 2<=$/option>
+                <=$option value="3">Level 3<=$/option>
+                <=$option value="dc_fast">DC Fast<=$/option>
+            <=$/select>
+        <=$/div>
+    <=$/div>
+    <!--Current Location -->
+    <=$div class="container mt-5 has-text-centered">
+        <=$div class="row">
+            <=$label class="label is-size-4">Click Current Location button to allow: <=$/label>
+        <=$/div>
+        <=$div class="container mt-5 is-centered">
+            <=$div class="row columns mb-5 is-centered">
+                <=$div class="control is-centered" id="address-container">
+
+                    <=$input class="input is-medium column" type="text" placeholder="Current Location" id="address">
+                <=$/div>
+                <=$span class="icon button is-large" id="current-location">
+                    <=$i class="fas fa-location-arrow"><=$/i>
+                <=$/span>
+            <=$/div>
+        <=$/div>
+        <!-- Submit Button-->
+        <=$div class="row mb-5 has-text-centered">
+            <=$div class="container has-text-centered" id="submit-container">
+                <=$input class="button is-large is-rounded" type="submit" value="Start Your Search" id="submit-button">
+            <=$/div>
+        <=$/div>
+    <=$/div>
+
+    <=$footer class="footer">
+        <=$div class="content has-text-centered">
+        <=$/div>
+    <=$/footer>
+
+    <!--Modal for search results-->
+    <=$div class="modal" id="results">
+        <=$div class="modal-background"><=$/div>
+        <=$div class="modal-content">
+            <!-- Results dynamically generated here -->
+            <=$div class="modal-card">
+                <=$header class="modal-card-head">
+                    <=$p class="modal-card-title">Search Results:<=$/p>
+                    <=$button class="delete" aria-label="close" id="close-modal"><=$/button>
+                <=4/header>
+                <=4section class="modal-card-body" id="modal-card">
+                    <=$div class="container has-text-centered" id="map"><=$/div>
+                    <!--Example results to see Modal in action-->
+
+                    <=$div class="container has-text-centered" id="list"><=$/div>
+
+                <=$/section>
+            <=$/div>
+        <=$/div>
+
+        <=$script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"><=$/script>
+        <=$script src="script.js"><=$/script>
+<=4/body>
+
+<=$/html>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4">The CSS</h1>
+                        <p>
+                       #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 400px;
+    /* The width is the width of the web page */
+  }
+
+  .footer{background-color:#363636}
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4">The JS</h1>
+                        <p>
+                            
+                            
+var latitude;
+var longitude;
+var locations = [];
+var saveSettings= [];
+// document.cookie = 'cookie2=value2; SameSite=None; Secure';
+
+//========================================================================
+// Geo Location functions
+//=======================================================
+
+function initMap() {
+    var searchLoc = { lat: latitude, lng: longitude };
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: searchLoc,
+    });
+    for (var m = 0; m < locations.length; m++)
+        var marker = new google.maps.Marker({
+            position: locations[m],
+            map: map,
+        });
+}
+
+function findMe() {
+    return new Promise(function (resolve, reject) {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+    });
+}
+
+function saveCoords() {
+    findMe()
+        .then((position) => {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+        })
+}
+
+//select vehicle type shows gas or electric container depending on choice
+$("#select-vehicle-type").on("change", function () {
+    if ($("#select-vehicle-type :selected").val() === "gas") {
+        $("#gas-container").attr("class", "container mt-5 has-text-centered");
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered is-hidden");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered is-hidden")
+    } else if ($("#select-vehicle-type :selected").val() === "electric") {
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered");
+        $("#gas-container").attr("class", "container mt-5 has-text-centered is-hidden");
+    }
+})
+//========================================================
+//Section of code below is for the user input to be displayed on the dashboard listed
+//=======================================================
+//the submit button
+
+function checkLocation() {
+    if ($("#address").val() !== "") {
+        return;
+    } else {
+        $("#address").attr("class", "has-text-centered input is-large column is-danger");
+        $("#address").append('<span class="icon is-small is-left"><i class="fas fa-exclamation-triangle"></i> </span>');
+        $("#address-container").attr("class", "control mt-5 has-text-centered has-icons-left");
+    }
+}
+//locaal storage
+function storeSettings() {
+    localStorage.setItem("settings", JSON.stringify(saveSettings));
+}
+
+function renderSettings() {
+    var saveSettings = JSON.parse(localStorage.getItem("settings"));
+    if (localStorage.getItem("settings") === null) {
+        return;
+    }
+    $("#select-vehicle-type").find("option[value=" + saveSettings[0].type).attr('selected','selected');
+    if ($("#select-vehicle-type :selected").val() === "gas") {
+        $("#gas-container").attr("class", "container mt-5 has-text-centered");
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered is-hidden");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered is-hidden")
+    } else if ($("#select-vehicle-type :selected").val() === "electric") {
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered");
+        $("#gas-container").attr("class", "container mt-5 has-text-centered is-hidden");
+    }
+   
+}
+
+//open modal
+$("#submit-button").on("click", function () {
+    checkLocation();
+    var radius = $("#select-radius :selected").val();
+    if (radius === "Select search radius") {
+        $("#select-radius").attr("class", "select is-rounded is-danger is-large is-focused");
+        $("#select-radius").append('<span class="icon is-small is-left"><i class="fas fa-exclamation-triangle"></i> </span>');
+        $("#radius-container").attr("class", "control mt-5 has-text-centered has-icons-left");
+        return;
+    }
+    if ($("#address").val() !== "") {
+        $("#results").attr("class", "modal is-active");
+        var vehicleType = $('#select-vehicle-type :selected').val()
+        if (vehicleType === "gas") {
+            fuelInfo()
+        }
+        else {
+            electricInfo();
+        }
+    } else {
+        $("#address").attr("class", "input is-medium column is-danger");
+        $("#current-location").attr("class", "icon button is-danger is-large")
+        return;
+    }
+   
+})
+
+$("#current-location").on("click", function () {
+    findMe()
+        .then((position) => {
+            latitude = position.coords.latitude;
+            longitude = position.coords.longitude;
+            $("#address").attr("value", latitude + ", " + longitude);
+        })
+})
+//close modal
+$("#close-modal").on("click", function () {
+    $("#results").attr("class", "modal");
+    $("#list").html("");
+    $("#map").html("");
+})
+
+//locaal storage
+function storeSettings() {
+    localStorage.setItem("settings", JSON.stringify(saveSettings));
+}
+
+function renderSettings() {
+    var saveSettings = JSON.parse(localStorage.getItem("settings"));
+    if (localStorage.getItem("settings") === null) {
+        return;
+    }
+    $("#select-vehicle-type").find("option[value=" + saveSettings[0].type).attr('selected','selected');
+    if ($("#select-vehicle-type :selected").val() === "gas") {
+        $("#gas-container").attr("class", "container mt-5 has-text-centered");
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered is-hidden");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered is-hidden")
+    } else if ($("#select-vehicle-type :selected").val() === "electric") {
+        $('#evConnector-container').attr("class", "container mt-5 has-text-centered");
+        $('#ev-level-container').attr("class", "container mt-5 has-text-centered");
+        $("#gas-container").attr("class", "container mt-5 has-text-centered is-hidden");
+    }
+
+}
+
+function electricInfo() {
+    var typeVehicle = "electric"
+    var electricAPIKey = "Th9TbtOCXmrJhKEo2F7cW2Srorv25I70XaPcviiw";
+    var address = ($("#address").val());
+    var electricLocation = encodeURI(address);
+    var radius = $("#select-radius :selected").val();
+    var evType = $("#select-connector-type :selected").val()
+    var evLevel= $("#select-charger-level :selected").val();
+    if (electricLocation !== "") {
+        electricQueryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=" + electricAPIKey + "&location=" + electricLocation + "&radius=" + radius + "&ev_connector_type=" + evType + "&ev_charging_level=" + evLevel + "&fuel_type=ELEC&limit=10";
+        
+    } else {
+        saveCoords();
+        electricQueryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=" + electricAPIKey + "&latitude=" + latitude + "&longitude=" + longitude + "&radius=" + radius + "&ev_connector_type=" + evType + "&ev_charging_level=" + evLevel + "&fuel_type=ELEC&limit=10";
+    }
+    saveSettings.push({
+        type: typeVehicle,
+    })
+    $.ajax({
+        url: electricQueryURL,
+        method: "GET"
+    }).then(function (electricResponse) {
+        for (i = 0; i < electricResponse.fuel_stations.length; i++) {
+
+            // Variables that are being pulled
+            var fuelStation = electricResponse.fuel_stations[i];
+            var stationName = fuelStation.station_name;
+            var stationAddress = fuelStation.street_address;
+            var evType = fuelStation.ev_connector_types[0];
+            var howFar = fuelStation.distance;
+            optionLat = (fuelStation.latitude);
+            optionLong = (fuelStation.longitude);
+
+            locations.push({ lat: optionLat, lng: optionLong })
+                
+            // Variables that need to be made and appended
+            var container1 = $('<div class="container p-3 mt-1"></div>')
+            var row = $('<div class="row"></div>')
+            var col1 = $('<div class="columns"></div>')
+            var col2 = $('<div class="column is-8"></div>')
+            var title = $('<div class="subtitle" id="name"></div>')
+            $(title).text(stationName);
+            var addy = $('<p class="row h3" id="address"></p>')
+            $(addy).text(stationAddress);
+            var col3 = $('<div class="column is-4"></div>')
+            var EV = $('<p class="row has-text-weight-bold has-text-right">EV Type:</p>')
+            var EV2 = $('<p class="has-text-right" id="EVType"></p>')
+            $(EV2).text(evType);
+            var row2 = $('<div class="row"></div>')
+            var distanceTitle = $('<p class="row has-text-weight-bold has-text-right">Distance:</p>')
+            var distanceAmount = $('<p class="has-text-right" id="goingTheDistance"></p>')
+            $(distanceAmount).text(howFar.toFixed(2) + "mi");
+            var split = $('<header class="card-header"></header>');
+
+            // Appending each var to a card-body then append to #modal-card
+            $(container1).append(row);
+            $(row).append(col1);
+            $(col1).append(col2, col3);
+            $(col2).append(title, addy);
+            $(col3).append(EV, EV2, row2);
+            $(row2).append(distanceTitle, distanceAmount)
+            $(split).append(container1);
+            $('#list').append(split); 
+            
+        }
+
+        var googleMap = $('<=#script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDDdLFBl_Wnn1TbZojvb4jZTH3rgDDWh8&callback=initMap&libraries=&v=weekly" defer>');
+        $("#map").append(googleMap);
+    }
+    )
+    storeSettings();
+}
+
+function fuelInfo() {
+    var typeVehicle = "gas";
+    var fuelAPIKey = "Th9TbtOCXmrJhKEo2F7cW2Srorv25I70XaPcviiw";
+    var address = ($("#address").val());
+    var fuelLocation = encodeURI(address);
+    var radius = $("#select-radius :selected").val();
+    var fuelType = $('#select-fuel-type :selected').val();
+
+    if (fuelLocation !== "") {
+        var fuelQueryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=" + fuelAPIKey + "&location=" + fuelLocation + "&radius=" + radius + "&fuel_type=" + fuelType + "&limit=10";
+    } else {
+        var fuelQueryURL = "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=" + fuelAPIKey + "&latitude=" + latitude + "&longitude=" + longitude + "&radius=" + radius + "&fuel_type=" + fuelType + "&limit=10";
+    }
+    saveSettings.push({
+        type: typeVehicle,
+    })
+    $.ajax({
+        url: fuelQueryURL,
+        method: "GET"
+    }).then(function (fuelResponse) {
+        for (i = 0; i < fuelResponse.fuel_stations.length; i++) {
+
+            // Variables that are being pulled
+            var fuelStation = fuelResponse.fuel_stations[i]
+            var stationName = fuelStation.station_name;
+            var stationAddress = fuelStation.street_address
+            var fuelKind = fuelStation.fuel_type_code
+
+            var howFar = fuelStation.distance
+            optionLat = (fuelStation.latitude);
+            optionLong = (fuelStation.longitude);
+
+            locations.push({ lat: optionLat, lng: optionLong })
+
+
+            // Variables that need to be made and appended
+            var container1 = $('<=$div class="container p-3 mt-1"><=$/div>')
+            var row = $('<=$div class="row"><=$/div>')
+            var col1 = $('<=$div class="columns"><=$/div>')
+            var col2 = $('<=$div class="column is-8"><=$/div>')
+            var title = $('<=$div class="subtitle" id="name"><=$/div>')
+            $(title).text(stationName);
+            var addy = $('<=$p class="row h3" id="address"><=$/p>')
+            $(addy).text(stationAddress);
+            var col3 = $('<=$div class="column is-4"><=$/div>')
+            var EV = $('<=$p class="row has-text-weight-bold has-text-right">Fuel Type:<=$/p>')
+            var EV2 = $('<=$p class="has-text-right" id="FuelType"><=$/p>')
+            $(EV2).text(fuelKind);
+            var row2 = $('<=$div class="row"><=$/div>')
+            var distanceTitle = $('<=$p class="row has-text-weight-bold has-text-right">Distance:<=$/p>')
+            var distanceAmount = $('<=$p class="has-text-right" id="goingTheDistance"><=$/p>')
+            $(distanceAmount).text(howFar.toFixed(2) + "mi");
+            var split = $('<=$header class="card-header"><=$/header>');
+
+            // Appending each var to a card-body then append to #modal-card
+            $(container1).append(row);
+            $(row).append(col1);
+            $(col1).append(col2, col3);
+            $(col2).append(title, addy);
+            $(col3).append(EV, EV2, row2);
+            $(row2).append(distanceTitle, distanceAmount)
+            $(split).append(container1);
+            $('#list').append(split);
+
+        }
+        var googleMap = $('<=$script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDDdLFBl_Wnn1TbZojvb4jZTH3rgDDWh8&callback=initMap&libraries=&v=weekly" defer>');
+        $("#map").append(googleMap);
+    })
+    storeSettings();
+}
+
+renderSettings();
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer">
+        <p>&copy;2020Copywrite Lucas Winslow</p>
+    </div>
+
+
+
+
+    <script tpe="text/javascript">
+        function draw() {
+            var width = $(document).width();
+            var height = $(document).height();
+        
+            $("section").width(width).height(height);
+        }
+        
+        $(document).resize(draw);
+        $(draw);
+
+
+        (function() {
+
+var img = document.getElementById('container').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+        
+        </script>
+</body>
+</html>

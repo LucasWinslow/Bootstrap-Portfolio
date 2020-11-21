@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -15,8 +17,8 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<section>
+    <nav class="navbar navbar-dark bg-dark">
         <h1>
             <!--Was added to define an element. -->
             <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a>
@@ -39,6 +41,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a> <!-- was linked to index.html-->
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pass.html">PassWord Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="weather.html">Weather!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Idk</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -51,7 +62,9 @@
 
                     <img src="images/img.bearddark.JPG" alt="me in the dark" width="350px" height="350px"
                         class="float-left m-3">
+                        <br clear="all">
                     <p class="card-text">
+                        
                         Hello! My name is Lucas Winslow. I am 21 years old, and hail from Charlotte, North Carolina. I
                         am
                         currently a Security Professional with Allied Universal and work in Uptown. However, I am
@@ -60,25 +73,65 @@
                     <p>I am currently taking a course for Coding, and hopefully it is enough to propell me into a future
                         of success. Fun tip about me, I really enjoy cooking!
                         <br>
-                        @email:winslowlucas8@gmail.com
-                        Instagram:0nepeckwonder
-                        Instagram:unlawfulboi99
-                        Instagram:_n0_nam3_n0_fac3
+                            Link to this Site: <a class= "btn btn-dark btn-sm" href="" role="button"> My Portfolio</a>
+                            <br>
+                            <br>
+                            Link to my resume. <a class= "btn btn-dark btn-sm" href="" role="button">My Resume</a>
+                            <br>
+
+                            Below are links to my websites that are listed on this page.
+                            <br>
+                            PassWord Generator:  <a class="btn btn-dark btn-sm" href="https://leedubla.github.io/passwordgen1/"
+                            role="button">Deployed Version</a>
+                            <br>
+                            <br>
+                            Fuel Finder: <a class="btn btn-dark btn-sm" href="https://grantf12.github.io/Alternative_Fuel_Finder/" role="button">Fuel Finder</a>
 
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container"><div class="row"> <div class="card"> <div class="card-body"> <p>Here is my contact info;</p> <br> <p>Email: lucaswinslow8@gmail.com</p><p>Phone Number: (980) 250-3934
+        
+    </p>
+    <a class="btn btn-dark btn-sm" href="https://github.com/Leedubla" role="button">GitHub</a>
+    <a class="btn btn-dark btn-sm" href="https://www.linkedin.com/in/LucasWinslow/" role="button">LinkedIn</a>
+</div> </div></div></div>
     
 
     <div id="footer">
-        <p>&copy;2020Copywrite</p>
+        <p>&copy;2020Copywrite Lucas Winslow</p>
     </div>
 
     
 
+</section>
+<script tpe="text/javascript">
+    function draw() {
+        var width = $(document).width();
+        var height = $(document).height();
+    
+        $("section").width(width).height(height);
+    }
+    
+    $(document).resize(draw);
+    $(draw);
 
+
+    (function() {
+
+var img = document.getElementById('container').firstChild;
+img.onload = function() {
+if(img.height > img.width) {
+    img.height = '100%';
+    img.width = 'auto';
+}
+};
+
+}());
+    
+    </script>
 </body>
 
 

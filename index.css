@@ -1,3 +1,7 @@
+section {
+    max-height: 100px;
+
+}
 
 .container {
     width:60%;
@@ -8,7 +12,80 @@
     margin-right:auto;
     margin-top:60px;
     margin-bottom:80px;
+    
 }
+.card{
+    background-color: rgb(78, 83, 83 );
+    width:60%;
+    padding-top:20px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-left:40px;
+    margin-right:auto;
+    margin-top:60px;
+    margin-bottom:80px;
+}
+
+
+h1 { 
+color: teal;
+}
+
+body{
+    background-color: rgb(63, 62, 59) ;
+        
+}
+   
+img {
+        width:350px;
+        height:350px;
+        max-width: 350px;
+        max-height: 350px;
+}
+
+
+
+
+  
+nav {
+    background-color: black;
+    
+
+}
+.jumbotron {
+    background-color: rgb(63, 62, 59);
+}
+.dcc{
+    width:60%;
+    padding-top:20px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-left:40px;
+    margin-right:auto;
+    margin-top:60px;
+    margin-bottom:80px;
+    float: left;
+}
+
+/* .thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35spx;
+    width:700px;
+    height:auto;
+    display:block;
+    z-index:999;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+} */
+
+
+ 
+
+
+
+ 
 
 #pagetitle {
     background-color: turquoise;
@@ -19,9 +96,7 @@ h1 {
 color: teal;
 }
 
-body{
-    background-color: rgb(180, 179, 175) ;
-}
+
 
 #footer {
     position: fixed;
@@ -33,3 +108,54 @@ body{
     text-align: center;
   }
 
+
+  #container {
+    width: 100%;
+    height: 100%;
+ }
+ 
+ #container img {
+    width: 100%;
+ }
+
+
+
+
+
+
+  @media only screen and (max-width : 650px) {
+    /* Smartphone view: 1 tile */
+    body {
+       width: 100%;
+       padding-bottom: 100%;
+    }
+ }
+ @media only screen and (max-width : 651px) and (min-width : 200px) {
+    /* Tablet view: 2 tiles */
+    body {
+       width: 50%;
+       padding-bottom: 50%;
+    }
+ }
+ @media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    body {
+       width: 33.3%;
+       padding-bottom: 33.3%;
+    }
+ }
+ @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop: 4 tiles */
+    body {
+       width: 25%;
+       padding-bottom: 25%;
+    }
+ }
+
+ @media only screen and (max-width : 2000px) and (min-width : 1290px) {
+    /* Large desktop: 5 tiles */
+    body {
+       width: 25%;
+       padding-bottom: 25%;
+    }
+ }

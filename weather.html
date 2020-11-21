@@ -1,0 +1,450 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+    <title>Weather!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1>
+            <!--Was added to define an element. -->
+            <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a>
+            <!-- was given id of pagetitle, and <strong> and linked to index.html-->
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <!--was linked to contact.html-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <!--was linked to portfolio.html-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a> <!-- was linked to index.html-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pass.html">PassWord Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="weather.html">Weather!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Idk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="row">
+
+        <div class="container">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Weather!</h1>
+                        <p class="lead">Weather. We always wonder what the weather is gonna be like. It can be a good conversational topic as well!
+                            I created a website  that allows you to see your local weather or the weather in a city of your choosing. 
+                        </p>
+                        <hr class="my-4">
+                        <p>Click this link to see your local Weather!</p>
+                        <a class="btn btn-dark btn-md" href="https://leedubla.github.io/YourWeather/#"
+                            role="button">Weather!</a>
+                            <p>Here is the link to the Repository.</p>
+                        <a class="btn btn-dark btn-md" href="https://github.com/Leedubla/YourWeather"
+                            role="button">Repository</a>
+                    </div>
+                </div>
+                <img src="images/WeatherSS.png" class="thumbnail" width="auto" height="230px" style="margin:16px" float="right">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="display-4">The HTML</h1>
+                    <p>JQuery Was Incorperated into the HTML</p><p>
+                              
+<=$html lang="en">
+
+    <=$head>
+        <!-- Required meta tags -->
+        
+    <!-- my links -->
+        <=$link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <=$link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    
+        <=$script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js">
+        <=$/script>
+    
+    <=$link rel="preconnect" href="https://fonts.gstatic.com">
+    <=$link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100&display=swap" rel="stylesheet">
+    <=$script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"><=$/script>
+        <=$link href="index.js">
+        <=$link href="index.css">
+    
+        <=$title>Your Local Weather!!!
+    
+        <=$/title>
+    <=$/head>
+    
+    <=$body>
+        <=$nav class="navbar navbar-dark bg-dark">
+            <=$a class="navbar-brand" href="#">
+                <=$i class="material-icons">wb_sunny<=$/i>&nbsp;Your Local Weather!!!!<=$/a>
+        <=$/nav>
+    
+        <=$div class="container-fluid">
+            <=$div class="row mt-3">
+                <=$div class="col-md-3 searcharea">
+                    <=$h2 class="text-secondary">Your Local City:</h2>
+                    <=$div class="input-group mb-3">
+                        <=$input type="text" class="form-control" id="searchinput" type="search" aria-label="Search">
+                        <=$div class="input-group-append">
+                            <=$button class="btn btn-primary" id="searchbtn" type="submit">
+                                <=$i class="material-icons">search</i>
+                            <=$/button>
+                        <=$/div>
+                    <=$/div>
+                    <=$div class="mt-5" id="prevSearches">
+                        
+                    <=$/div>
+                <=$/div>
+    
+                <=$div class="col-md-9">
+                    <=$div class="container" id="earthforecast">
+                       
+                    <=$/div>
+                <=$/div>
+            <=$/div>
+    
+        <=$/div>
+    
+        
+        <=$script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"><=$/script>
+        <=$script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"><=$/script>
+        <=$script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"><=$/script>
+        <=$script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"><=$/script>
+       
+    
+    <=$/body>
+    
+    
+    
+    <=$script>
+        var savedLocations = [];
+    var currentLoc;
+    
+    function initialize() {
+        savedLocations = JSON.parse(localStorage.getItem("weathercities"));
+        var lastSearch;
+       
+        if (savedLocations) {
+             
+            currentLoc = savedLocations[savedLocations.length - 1];
+            showPrevious();
+            getCurrent(currentLoc);
+        }
+        else {
+            
+            if (!navigator.geolocation) {
+            
+                getCurrent("Charlotte");
+            }
+            else {
+                navigator.geolocation.getCurrentPosition(success, error);
+            }
+        }
+    
+    }
+    
+    function success(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=7e4c7478cc7ee1e11440bf55a8358ec3";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            currentLoc = response.name;
+            saveLoc(response.name);
+            getCurrent(currentLoc);
+        });
+    
+    }
+    
+    function error(){
+       
+        currentLoc = "Norfolk"
+        getCurrent(currentLoc);
+    }
+    
+    function showPrevious() {
+        // /saves location to local storage
+        if (savedLocations) {
+            $("#prevSearches").empty();
+            var btns = $("<div>").attr("class", "list-group");
+            for (var i = 0; i < savedLocations.length; i++) {
+                var locBtn = $("<a>").attr("href", "#").attr("id", "loc-btn").text(savedLocations[i]);
+                if (savedLocations[i] == currentLoc){
+                    locBtn.attr("class", "list-group-item list-group-item-action active");
+                }
+                else {
+                    locBtn.attr("class", "list-group-item list-group-item-action");
+                }
+                btns.prepend(locBtn);
+            }
+            $("#prevSearches").append(btns);
+        }
+    }
+    
+    function getCurrent(city) {
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=7e4c7478cc7ee1e11440bf55a8358ec3&units=imperial";
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+            error: function (){
+                savedLocations.splice(savedLocations.indexOf(city), 1);
+                localStorage.setItem("weathercities", JSON.stringify(savedLocations));
+                initialize();
+            }
+        }).then(function (response) {
+            
+            var currCard = $("<div>").attr("class", "card bg-light");
+            $("#earthforecast").append(currCard);
+    
+            
+            var currCardHead = $("<div>").attr("class", "card-header").text("Current weather for " + response.name);
+            currCard.append(currCardHead);
+    
+            var cardRow = $("<div>").attr("class", "row no-gutters");
+            currCard.append(cardRow);
+    
+         
+            var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
+    
+            var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+            cardRow.append(imgDiv);
+    
+            var textDiv = $("<div>").attr("class", "col-md-8");
+            var cardBody = $("<div>").attr("class", "card-body");
+            textDiv.append(cardBody);
+           
+            cardBody.append($("<h3>").attr("class", "card-title").text(response.name));
+          
+            var currdate = moment(response.dt, "X").format("dddd, MMMM Do YYYY, h:mm a");
+            cardBody.append($("<p>").attr("class", "card-text").append($("<small>").attr("class", "text-muted").text("Last updated: " + currdate)));
+            // temp
+            cardBody.append($("<p>").attr("class", "card-text").html("Temperature: " + response.main.temp + " &#8457;"));
+           
+            cardBody.append($("<p>").attr("class", "card-text").text("Humidity: " + response.main.humidity + "%"));
+            // wind
+            cardBody.append($("<p>").attr("class", "card-text").text("Wind Speed: " + response.wind.speed + " MPH"));
+    
+        //    uv
+            var uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=7e4c7478cc7ee1e11440bf55a8358ec3&lat=" + response.coord.lat + "&lon=" + response.coord.lat;
+            $.ajax({
+                url: uvURL,
+                method: "GET"
+            }).then(function (uvresponse) {
+                var uvindex = uvresponse.value;
+                var bgcolor;
+                if (uvindex <= 3) {
+                    bgcolor = "green";
+                }
+                else if (uvindex >= 3 || uvindex <= 6) {
+                    bgcolor = "yellow";
+                }
+                else if (uvindex >= 6 || uvindex <= 8) {
+                    bgcolor = "orange";
+                }
+                else {
+                    bgcolor = "red";
+                }
+                var uvdisp = $("<p>").attr("class", "card-text").text("UV Index: ");
+                uvdisp.append($("<span>").attr("class", "uvindex").attr("style", ("background-color:" + bgcolor)).text(uvindex));
+                cardBody.append(uvdisp);
+    
+            });
+    
+            cardRow.append(textDiv);
+            getForecast(response.id);
+        });
+    }
+    
+    function getForecast(city) {
+        // weather 5
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + city + "&APPID=7e4c7478cc7ee1e11440bf55a8358ec3&units=imperial";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            
+            var newrow = $("<div>").attr("class", "forecast");
+            $("#earthforecast").append(newrow);
+    
+            for (var i = 0; i < response.list.length; i++) {
+                if (response.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+                    var newCol = $("<div>").attr("class", "one-fifth");
+                    newrow.append(newCol);
+    
+                    var newCard = $("<div>").attr("class", "card text-white bg-primary");
+                    newCol.append(newCard);
+    
+                    var cardHead = $("<div>").attr("class", "card-header").text(moment(response.list[i].dt, "X").format("MMM Do"));
+                    newCard.append(cardHead);
+    
+                    var cardImg = $("<img>").attr("class", "card-img-top").attr("src", "https://openweathermap.org/img/wn/" + response.list[i].weather[0].icon + "@2x.png");
+                    newCard.append(cardImg);
+    
+                    var bodyDiv = $("<div>").attr("class", "card-body");
+                    newCard.append(bodyDiv);
+    
+                    bodyDiv.append($("<p>").attr("class", "card-text").html("Temp: " + response.list[i].main.temp + " &#8457;"));
+                    bodyDiv.append($("<p>").attr("class", "card-text").text("Humidity: " + response.list[i].main.humidity + "%"));
+                }
+            }
+        });
+    }
+    
+    function clear() {
+        
+        $("#earthforecast").empty();
+    }
+    
+    function saveLoc(loc){
+        
+        if (savedLocations === null) {
+            savedLocations = [loc];
+        }
+        else if (savedLocations.indexOf(loc) === -1) {
+            savedLocations.push(loc);
+        }
+        // /local storage
+        localStorage.setItem("weathercities", JSON.stringify(savedLocations));
+        showPrevious();
+    }
+    
+    $("#searchbtn").on("click", function () {
+        
+        event.preventDefault();
+        
+        var loc = $("#searchinput").val().trim();
+        
+        if (loc !== "") {
+           
+            clear();
+            currentLoc = loc;
+            saveLoc(loc);
+            
+            $("#searchinput").val("");
+            
+            getCurrent(loc);
+        }
+    });
+    
+    $(document).on("click", "#loc-btn", function () {
+        clear();
+        currentLoc = $(this).text();
+        showPrevious();
+        getCurrent(currentLoc);
+    });
+    
+    initialize();
+    
+<=$/script>
+    
+    
+    
+    
+    <=$/html>
+    @2020
+    All 
+    Rights
+    Reserved
+    @LucasWinslow
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="column">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="display-4">The JS</h1>
+                    <p>
+                        // const settings = {
+                            // 	"async": true,
+                            // 	"crossDomain": true,
+                            // 	"url": "https://dark-sky.p.rapidapi.com/undefined,undefined?lang=en&units=auto",
+                            // 	"method": "GET",
+                            // 	"headers": {
+                            // 		"x-rapidapi-key": "ece8de5e1dmsh61292c2d6c31c11p1ff3aajsne77efbc556cd",
+                            // 		"x-rapidapi-host": "dark-sky.p.rapidapi.com"
+                            // 	}
+                            // };
+                            
+                            // $.ajax(settings).done(function (response) {
+                            // 	console.log(response);
+                            // });
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script tpe="text/javascript">
+        function draw() {
+            var width = $(document).width();
+            var height = $(document).height();
+        
+            $("section").width(width).height(height);
+        }
+        
+        $(document).resize(draw);
+        $(draw);
+
+
+        (function() {
+
+var img = document.getElementById('container').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+        
+        </script>
+</body>
+</html>

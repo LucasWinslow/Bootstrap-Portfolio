@@ -4,6 +4,9 @@
 <head>
     <h1></h1>
     <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -16,8 +19,10 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    
+<section>
+    <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" id="pagetitle" href="index.html"><strong>Lucas Winslow</strong></a>
         <!-- was given id of pagetitle, was linked to index.html, was given<strong>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -38,6 +43,15 @@
                     <a class="nav-link" href="index.html">About</a>
                     <!--was linked to index.html-->
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pass.html">PassWord Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="weather.html">Weather!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Idk</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -50,15 +64,15 @@
 
                 <h1>Portfolio</h1>
 
-                <div class="row">
+                <div class="row" id="container">
                     <img src="images/img1.JPG" width="350px" height="350px" style="margin:16px"> <img
                         src="images/img6.JPG" width="350px" height="350px" style="margin: 16px">
                 </div>
-                <div class="row">
+                <div class="row" id="container">
                     <img src="images/img3.JPG" width="350px" height="350px" style="margin:16px"><img
                         src="images/img4.JPG" width="350px" height="350px" style="margin:16px">
                 </div>
-                <div class="row">
+                <div class="row" id="container">
                     <img src="images/img5.JPG" width="350px" style="margin:16px">
                 </div>
             </div>
@@ -71,8 +85,36 @@
   
 
     <div id="footer">
-        <p>&copy;2020Copywrite</p>
+        <p>&copy;2020Copywrite Lucas Winslow</p>
     </div>
+    </section>
+    <script tpe="text/javascript">
+        // <script tpe="text/javascript">
+        function draw() {
+            var width = $(document).width();
+            var height = $(document).height();
+        
+            $("section").width(width).height(height);
+        }
+        
+        $(document).resize(draw);
+        $(draw);
+
+
+        (function() {
+
+var img = document.getElementById('container').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
+
+}());
+        
+        </script>
+    
 
 </body>
 
