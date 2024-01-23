@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -19,13 +21,116 @@
 </head>
 
 <body>
-<section>
-    <nav class="navbar navbar-dark bg-dark">
-        <h1>
+    <section>
+    <div class="bg-img">
+        <!-- <div class="navbar" style="background-color: rgba(125, 125, 125, 0.4);"> -->
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(200, 200, 200, 0.1);">
+            <!-- <div class="container-fluid"> -->
+                <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+    
+    
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html" style="color: white;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pass.html" style="color: white;">PassWord Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html" style="color: white;">Fuel Finder </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="runner.html" style="color: white;">Runner Game</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: white;">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+
+                 
+                
+                </ul>
+                <ul>
+                  <a style="display: block; color: white;">(980) 250-3934</a>
+                  <!-- <a style="display: block; color: white;">LIC: WNJSFH-888</a> -->
+
+                </ul>
+                <ul>
+                    <button type="button" class="justify-content-center" data-toggle="modal" data-target="#myModal" style="display: contents; border: none;">
+                        <a style="color: white;">Contact</a>
+                      </button>
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-md" role="document">
+                         <div class="modal-content">
+                         <div class="modal-header">
+                           <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Siding</h5>
+                         </div>
+                         <div class="modal-body">
+                          <div id="container">
+                              <div id="Contact">
+                                <div class="formbold-main-wrapper">
+                                  <div class="formbold-form-wrapper">
+                                   <form action="https://formsubmit.co/winslowlucas8@gmail.com" method="POST">
+                                    <div class="formbold-input-flex">
+                                      <div>
+                                        <label for="firstname" class="formbold-form-label"> First name </label>
+                                        <input type="text"name="firstname"id="firstname" placeholder="First" class="formbold-form-input"/>
+                                      </div>
+                                      <div>
+                                       <label for="lastname" class="formbold-form-label"> Last name </label>
+                                       <input type="text" name="lastname" id="lastname" placeholder="Last" class="formbold-form-input"/>
+                                      </div>
+                                   </div>
+                                   <div class="formbold-input-flex">
+                                   <div>
+                                     <label for="email" class="formbold-form-label"> E-Mail </label>
+                                     <input type="email" name="email" id="email" placeholder="Example@mail.com" class="formbold-form-input" />
+                                   </div>
+                                  <div>
+                                    <label for="phone" class="formbold-form-label"> Phone Number </label>
+                                    <input    type="text" name="phone" id="phone" placeholder="(123) 456-7890" class="formbold-form-input"/>
+                                  </div>
+                                </div>
+                                <div>
+                                  <label for="message" class="formbold-form-label"> Message </label>
+                                  <textarea rows="6"name="message"id="message"placeholder="Your Message Here."class="formbold-form-input"></textarea>
+                               </div>
+                               <button class="formbold-btn">
+                               Send Message
+                               </button>
+                                        </form>
+                                      </div>
+                                    </div>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+<!-- <section> -->
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <h1> -->
             <!--Was added to define an element. -->
-            <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a>
+            <!-- <a class="navbar-brand" id="pagetitle" href="index.html"> <strong>Lucas Winslow</strong></a> -->
             <!-- was given id of pagetitle, and <strong> and linked to index.html-->
-        </h1>
+        <!-- </h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,16 +138,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a> -->
                     <!--was linked to contact.html-->
-                </li>
+                <!-- </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a> -->
                     <!--was linked to portfolio.html-->
-                </li>
+                <!-- </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">About</a> <!-- was linked to index.html-->
-                </li>
+                <!-- </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pass.html">PassWord Generator</a>
                 </li>
@@ -55,7 +160,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
 
     <div class="container">
@@ -64,18 +169,19 @@
                 <div class="card-body">
                     <h1>About Me</h1>
 
-                    <img src="images/img.bearddark.JPG" alt="me in the dark" width="350px" height="350px" 
+                    <img src="images/LucasGoodImg.JPG" alt="me in the dark" width="350px" height="350px" 
                         class="center" >
                         <br clear="all">
-                    <p class="card-text">
+                    <p class="card-text" style="color: black;">
                         
                         Hello! My name is Lucas Winslow. I am 24 years old, and reside in Cape Coral Fl. I currently work as
                         a carpenter. However, my skills range from Construction, Security, to even Web Development.
                     </p>
-                    <p>In my free time I enjoy traveling, being in nature, and fiddling with the microwave to make the perfect popcorn.
+                    <p style="color: black;">In my free time I enjoy traveling, being in nature, and fiddling with the microwave to make the perfect popcorn.
                         On this website, I have provided you with the different projects I have, and am currently working on. Along with 
                         a link to my current resume. Head over to the contact page to conect!
                         <br>
+                        <!-- remove links, move to a better location. -->
                             Link to this Site: <a class= "btn btn-dark btn-sm" href="" role="button"> My Portfolio</a>
                             <br>
                             <br>
@@ -97,12 +203,47 @@
     </div>
      </div></div></div>
 
-
+<!-- footer -->
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <!-- <h3>Let's Connect</h3>
+                    <ul> -->
+                        <!-- <li><a href="#">FaceBook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul> -->
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Portfolio.html">Gallery</a></li>
+                        <li><a href="Team.Html"> About Us</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <!-- <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul> -->
+                </div class="row justify-content-center">
+                <!-- <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a> -->
+                  <p class="copyright" style="text-align: center; color: black;">Powered By Lucas Winslow © 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
     
 
-    <div id="footer">
+    <!-- <div id="footer">
         <p>&copy;2023-2024Copywrite Lucas Winslow</p>
-    </div>
+    </div> -->
 
     
 
