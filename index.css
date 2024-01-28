@@ -110,7 +110,18 @@ text-align: center;
 }
 
 /* Carosuel */
-.imgc1{
+.container{
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+#carouselContainer{
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+
+#imgc1{
    display: block;
    height: auto;
    max-width: 100%;
@@ -119,7 +130,7 @@ text-align: center;
    width: 100%;
  }
 
- .imgc2{
+ #imgc2{
    display: block;
  height: auto;
  max-width: 100%;

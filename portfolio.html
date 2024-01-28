@@ -16,6 +16,8 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="portfolio.js">
+    <link rel="stylesheet" href="portfolio.css"
 </head>
 
 <body>
@@ -76,7 +78,7 @@
 
     <div class="row">
         <div class="container">
-          <div class="card-body" id="carouselCountainer">
+          <div class="card-body" id="carouselContainer">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -119,7 +121,31 @@
         </div>
       </div>
 
+      <div class="image_gallery">
+        <!-- <img src="PossBack.jpg" onclick="showImage('https://picsum.photos/200')">  -->
+        <!-- <img src="Bridgefoto.jpg" onclick="showImage('https://picsum.photos/201')">  -->
+        <img src="CanoeVert.jpg" onclick="showImage('https://picsum.photos/202')"> 
+        <img src="CanonFoto.jpg" onclick="showImage('https://picsum.photos/203')"> 
+        <img src="WaterPic1.jpg" onclick="showImage('https://picsum.photos/204')"> 
+        <img src="LucasImg.jpg" onclick="showImage('https://picsum.photos/205')"> 
+        <!-- <img src="PossBack.jpg" onclick="showImage('https://picsum.photos/200')">  -->
+        <!-- <img src="Bridgefoto.jpg" onclick="showImage('https://picsum.photos/201')">  -->
+        <img src="CanoeVert.jpg" onclick="showImage('https://picsum.photos/202')"> 
+        <img src="CanonFoto.jpg" onclick="showImage('https://picsum.photos/203')"> 
+        <img src="WaterPic1.jpg" onclick="showImage('https://picsum.photos/204')"> 
+        <img src="LucasImg.jpg" onclick="showImage('https://picsum.photos/205')"> 
+        <!-- <img src="PossBack.jpg" onclick="showImage('https://picsum.photos/200')">  -->
+        <!-- <img src="Bridgefoto.jpg" onclick="showImage('https://picsum.photos/201')">  -->
+        <img src="CanoeVert.jpg" onclick="showImage('https://picsum.photos/202')"> 
+        <img src="CanonFoto.jpg" onclick="showImage('https://picsum.photos/203')"> 
+        <img src="WaterPic1.jpg" onclick="showImage('https://picsum.photos/204')"> 
+        <img src="LucasImg.jpg" onclick="showImage('https://picsum.photos/205')"> 
+    </div>
 
+    <div id="expanded_img" class="single_image_display">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="image_content" id="image">
+    </div>
 
 
     <div class="container">
@@ -148,10 +174,42 @@
 
   
 
-    <div id="footer">
-        <p>&copy;2023-2024Copywrite Lucas Winslow</p>
-    </div>
-    </section>
+<!-- footer -->
+<div class="footer-clean">
+  <footer>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                  <!-- <h3>Let's Connect</h3>
+                  <ul> -->
+                      <!-- <li><a href="#">FaceBook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">LinkedIn</a></li>
+                  </ul> -->
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="Portfolio.html">Gallery</a></li>
+                      <li><a href="Team.Html"> About Us</a></li>
+                      <li><a href="Contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <!-- <h3>Careers</h3>
+                  <ul>
+                      <li><a href="#">Job openings</a></li>
+                      <li><a href="#">Employee success</a></li>
+                      <li><a href="#">Benefits</a></li>
+                  </ul> -->
+              </div class="row justify-content-center">
+              <!-- <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a> -->
+                <p class="copyright" style="text-align: center; color: black;">Powered By Lucas Winslow © 2024</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
     <script tpe="text/javascript">
         // <script tpe="text/javascript">
         function draw() {

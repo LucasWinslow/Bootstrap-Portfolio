@@ -59,7 +59,10 @@ The body  was given a background color.
 
 
 <!-- notes for self -->
+<!-- work on resizing for photos in gallery -->
 <!-- update changes on all pages currently commented -->
+<!-- work on carousel---check -->
+<!-- add auto resize functionailty -->
 <!-- add services page and add form where user can select the items that they want and email will be sent -->
 <!-- on service page have demo templates -->
 <!-- add more features to the websit -->
