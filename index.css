@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 240, 230);
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #b4eff7;
+  }
+  
+/* hero */
+  .hero {
+    height: 100vh;
+    background: url('HeroImgLucas.jpg') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; 
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+  }
+  
+  
+
+
+/* grids */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .about-item {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .about-item img {
+    max-width: 100%;
+    float: right;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Prevent stacking on larger screens */
+  }
+  
+
+
+  
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+  /* projectus */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #fdfdfd;
+  }
+  
+  /* Each project gets a position */
+  .project1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .project2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .text-bubble,
+.text-screen,
+input,
+button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.text-screen {
+    max-height: 250px;  /* fixed height */
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    scroll-behavior: smooth;
+  }
+  
+  .project3 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  /* Style for all boxes */
+  .project-box {
+    background-color: #e0d7c6; /* Light tan */
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    font-size: 1.2rem;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+
+  .password{
+  width: auto;
+  height: auto;
+  }
