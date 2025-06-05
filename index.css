@@ -190,7 +190,9 @@ button {
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    background: white;
+    background: rgb(28, 173, 72);
+    border-color: red;
+
   }
   
   .formbold-input-flex {
