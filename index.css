@@ -162,7 +162,10 @@ button {
     overflow: hidden;
     box-sizing: border-box;
   }
-  
+  .simulatedText{
+    color: slategray;
+    
+  }
 
   .password{
   width: auto;
