@@ -1,4 +1,45 @@
-/* Base Reset */
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1s ease 3.5s forwards;
+}
+
+.logo-draw text {
+  font-family: 'Alex Brush', cursive;
+  font-size: 64px;
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawText 2.5s ease-out forwards 0.5s;
+}
+
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+  }
+}
+
+
 *,
 *::before,
 *::after {
@@ -111,19 +152,36 @@ html, body {
 }
 
 /* About Section */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
 }
+.about-item:hover {
+  animation: pulseShadow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulseShadow {
+  from {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
 
 .about-item {
-  background-color: #f5f5f5;
+  background-color: rgb(243, 239, 239);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  
 }
+
+
 .about-item .row {
   display: flex;
   gap: 2rem;
@@ -154,6 +212,9 @@ html, body {
   margin-top: 1rem;
 }
 
+#introprojects{
+  text-align: center;
+}
 /* Projects Section */
 .projects-grid {
   display: grid;
@@ -161,11 +222,11 @@ html, body {
   grid-template-rows: repeat(3, auto);
   gap: 2rem;
   padding: 4rem 2rem;
-  background-color: #fdfdfd;
+  background-color: white;
 }
 
 .project-box {
-  background-color: #e0d7c6;
+  background-color: rgb(243, 239, 239);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -173,7 +234,7 @@ html, body {
   font-size: 1.2rem;
 }
 
-/* Password Generator + Simulator */
+/* Simulator */
 .text-bubble,
 .text-screen,
 input,
@@ -187,9 +248,67 @@ button {
   overflow-y: auto;
   padding-right: 0.5rem;
 }
+/* password */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-.password {
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-header{
+  background-color: rgb(210, 207, 207);
+}
+.card-body{
+  background-color: #e3e8ef;
+}
+.card-footer{
+  background-color: rgb(221, 221, 221)
+}
+#generate{
+  background-color: rgb(164, 164, 164);
+}
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
   width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
 }
 
 /* Contact Form */
@@ -288,4 +407,8 @@ button {
     font-size: 14px;
     padding: 10px 15px;
   }
+}
+
+#inclosing{
+  text-align: center;
 }
