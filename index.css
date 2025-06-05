@@ -124,6 +124,27 @@ html, body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.about-item .row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; /* important for wrapping on small screens */
+}
+
+/* COLUMNS */
+.about-item .col {
+  flex: 1 1 45%; /* responsive sizing */
+  min-width: 280px; /* ensures it stacks on narrow screens */
+}
+
+/* TEXT STYLING */
+.about-item .col p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
 
 .about-item img {
   width: 100%;
