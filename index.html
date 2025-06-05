@@ -12,14 +12,24 @@
 <body>
 
     <header>
-        <nav class="navbar">
-          <div class="logo">Lucas Winslow</div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">Lucas Winslow</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <script>
+          const hamburger = document.getElementById('hamburger');
+          const navLinks = document.getElementById('navLinks');
+      
+          hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+          });
+        </script>
+      </nav>
       </header>
       
       <section class="hero">
@@ -233,7 +243,7 @@ li {
                 <div class="text-screen">
                   <div class="space-y-2" id="messageContainer"></div>
                   <div class="mt-4 flex items-center gap-2">
-                    <input disabled class="w-full px-4 py-2 rounded bg-gray-700 text-gray-400" placeholder="Write a reply..." />
+                    <input disabled class="w-full px-4 py-2 rounded bg-gray-700 text-gray-400" placeholder="Click Send to Demo!" />
                     <button id="simulateText" class="px-4 py-2 bg-blue-500 text-black rounded hover:bg-blue-400 transition" style="color: slategrey;">Send</button>
                   </div>
                   <div class="mt-4">
@@ -505,7 +515,22 @@ li {
   </main>
 
   <footer>
-    <p>&copy; 2025 Lucas Winslow</p>
+    <p class="footer-text">© 2025 Lucas Winslow. All rights reserved.</p>
+  
+    <style>
+      footer {
+        background-color: #f5f5f5;
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: 2rem;
+      }
+  
+      .footer-text {
+        font-size: 0.9rem;
+        color: #333;
+        margin: 0;
+      }
+    </style>
   </footer>
 
   <script src="script.js"></script>
